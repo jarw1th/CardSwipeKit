@@ -7,9 +7,9 @@
 
 import Foundation
 
-//public enum CardStyle {
-//    
-//    case deck
-//    case carousel
-//    
-//}
+internal enum CardStyle {
+    
+    case deck
+    case carousel
+    
+}

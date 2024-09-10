@@ -11,8 +11,10 @@ internal final class ViewModel: ObservableObject {
     
     @Published var offset: CGSize = .zero
     @Published var topCardIndex: Int = 0
+    
     var isAnimated: Bool
     var type: CardStyle = .deck
+    var carouselSpace: CGFloat = 300
    
     init(isAnimated: Bool) {
         self.isAnimated = isAnimated
@@ -33,7 +35,7 @@ internal final class ViewModel: ObservableObject {
     }
     
     private func carouselOffset(for index: Int) -> CGSize {
-        guard index == topCardIndex else { return CGSize(width: CGFloat(index - topCardIndex) * 300, height: 0) }
+        guard index == topCardIndex else { return CGSize(width: CGFloat(index - topCardIndex) * carouselSpace, height: 0) }
         return CGSize(width: offset.width, height: offset.height)
     }
 
@@ -67,6 +69,19 @@ internal final class ViewModel: ObservableObject {
             withAnimation {
                 offset = .zero
             }
+        }
+    }
+    
+    func swipeBack() {
+        guard topCardIndex > 0 else { return }
+        
+        withAnimation(.easeInOut) {
+            offset = CGSize(width: -1000, height: 0)
+            topCardIndex -= 1
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.offset = .zero
         }
     }
     

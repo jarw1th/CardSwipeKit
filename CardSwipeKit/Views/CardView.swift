@@ -25,6 +25,7 @@ public struct CardView: View {
                 .font(.headline)
                 .padding()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)

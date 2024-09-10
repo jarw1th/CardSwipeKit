@@ -12,6 +12,7 @@
 		2103FE4B2C903DF80020D1AE /* CardSwipeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103FE4A2C903DF80020D1AE /* CardSwipeKitTests.swift */; };
 		2103FE562C903E0B0020D1AE /* CardSwipeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103FE552C903E0B0020D1AE /* CardSwipeKit.swift */; };
 		2103FE592C903E8F0020D1AE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103FE582C903E8F0020D1AE /* CardView.swift */; };
+		2103FE5C2C90A40E0020D1AE /* CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103FE5B2C90A40E0020D1AE /* CardStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		2103FE4A2C903DF80020D1AE /* CardSwipeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeKitTests.swift; sourceTree = "<group>"; };
 		2103FE552C903E0B0020D1AE /* CardSwipeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeKit.swift; sourceTree = "<group>"; };
 		2103FE582C903E8F0020D1AE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2103FE5B2C90A40E0020D1AE /* CardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		2103FE3D2C903DF80020D1AE /* CardSwipeKit */ = {
 			isa = PBXGroup;
 			children = (
+				2103FE5A2C90A3E90020D1AE /* Enums */,
 				2103FE572C903E860020D1AE /* Views */,
 				2103FE552C903E0B0020D1AE /* CardSwipeKit.swift */,
 				2103FE3F2C903DF80020D1AE /* CardSwipeKit.docc */,
@@ -94,6 +97,14 @@
 				2103FE582C903E8F0020D1AE /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2103FE5A2C90A3E90020D1AE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2103FE5B2C90A40E0020D1AE /* CardStyle.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2103FE402C903DF80020D1AE /* CardSwipeKit.docc in Sources */,
+				2103FE5C2C90A40E0020D1AE /* CardStyle.swift in Sources */,
 				2103FE592C903E8F0020D1AE /* CardView.swift in Sources */,
 				2103FE562C903E0B0020D1AE /* CardSwipeKit.swift in Sources */,
 			);

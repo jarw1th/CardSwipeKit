@@ -24,10 +24,10 @@ public struct CardView: View {
             Text(title)
                 .font(.headline)
                 .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(radius: 5)
         }
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
     
 }

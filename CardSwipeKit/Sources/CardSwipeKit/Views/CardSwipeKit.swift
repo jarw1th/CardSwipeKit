@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// A view for displaying and interacting with a stack of cards.
+@available(macOS 11.0, *)
 public struct CardSwipeKit<CardData, Content: View>: View {
     
     @ObservedObject private var viewModel: ViewModel
@@ -43,7 +44,7 @@ public struct CardSwipeKit<CardData, Content: View>: View {
 
     public var body: some View {
         VStack {
-            if #available(iOS 17, *) {
+            if #available(iOS 17, *), #available(macOS 14.0, *) {
                 // Use the appropriate .onChange modifier based on iOS version
                 makeBody()
                     .onChange(of: isSwipeBack) { _, val in

@@ -1,22 +1,24 @@
 # `CardSwipeKit`
 
-`CardSwipeKit` is a SwiftUI view component that allows for the creation of card swipeable interfaces. It supports two layouts—deck and carousel—and includes optional swipe animations and swipe-back functionality.
+`CardSwipeKit` is a SwiftUI view component designed for creating interactive card-swipe interfaces. It supports multiple card layouts, swipe animations, and swipe-back functionality.
 
 ## Overview
 
-`CardSwipeKit` provides a customizable card-swiping interface in which users can swipe through a deck of cards. The cards can be displayed in either a deck layout or a carousel layout. It also allows swipe-back functionality, enabling the user to return to a previous card with an animated swipe.
+`CardSwipeKit` simplifies the creation of swipeable card interfaces in SwiftUI. Cards can be arranged in two styles: **deck** and **carousel**, each offering a unique user experience. It supports swipe-back functionality and smooth animations to enhance interactivity.
 
 ### Features
 
 - Customizable card views
-- Swipe animations
-- Two layout styles: deck and carousel
-- Swipe-back functionality
-- Bindable properties to control swipe-back actions
+- **Deck** and **Carousel** layout styles
+- Optional swipe animations
+- Swipe-back functionality with binding support
+- Easy integration with SwiftUI
 
 ## Usage
 
 You can initialize `CardSwipeKit` by providing a list of card data and a view builder for each card. You can optionally enable swipe-back functionality and choose between the `deck` and `carousel` layouts.
+
+### Example
 
 ```swift
 struct ContentView: View {

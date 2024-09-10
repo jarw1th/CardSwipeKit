@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// A view representing a card with a title.
+@available(macOS 10.15, *)
 public struct CardView: View {
     
     // Title to display on the card

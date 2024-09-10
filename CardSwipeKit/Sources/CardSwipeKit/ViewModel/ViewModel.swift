@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// ViewModel responsible for managing card interactions, including swipe gestures, animations, and card transitions.
+@available(macOS 10.15, *)
 internal final class ViewModel: ObservableObject {
     
     /// Tracks the current drag offset for card swiping.
